@@ -16,7 +16,7 @@ public class InsertTableInDB {
             Connection con = DriverManager.getConnection(url, username, password); // create connction
             String q = "create table bable(tId int(20) primary key auto_increment, tName varchar(200) not null, tCity varchar(400))";
             Statement stmt = con.createStatement(); // Create Statement
-            stmt.executeQuery(q);
+            stmt.executeUpdate(q);
             System.out.println("Table1 is created in database.....");
             con.close();
         } catch (ClassNotFoundException e) { // for load Driver
