@@ -1,4 +1,5 @@
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 class FirstJDBC {
     public static void main(String[] args) {
@@ -13,9 +14,8 @@ class FirstJDBC {
             Connection con = DriverManager.getConnection(url, username, password);
             if (con.isClosed()) {
                 System.out.println("Connection is Closed");
-            }
-            else{
-                    System.out.println("Connection created ............");
+            } else {
+                System.out.println("Connection created ............");
             }
 
         } catch (Exception e) {
