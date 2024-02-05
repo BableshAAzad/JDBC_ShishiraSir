@@ -10,7 +10,7 @@ class FirstJDBC {
             // ! Create a connetion
             String url = "jdbc:mysql://localhost:3306/aazaddb";
             String username = "root";
-            String password = "AAzad@12345";
+            String password = "root";
             Connection con = DriverManager.getConnection(url, username, password);
             if (con.isClosed()) {
                 System.out.println("Connection is Closed");
