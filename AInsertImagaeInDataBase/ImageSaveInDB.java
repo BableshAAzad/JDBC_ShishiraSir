@@ -14,7 +14,7 @@ public class ImageSaveInDB {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/aazaddb";
             String username = "root";
-            String password = "AAzad@12345";
+            String password = "root";
             Connection con = DriverManager.getConnection(url, username, password);
             String q = "insert into images(pic) values(?)";
             PreparedStatement pstmt = con.prepareStatement(q);
