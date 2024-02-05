@@ -12,7 +12,7 @@ public class InsertDetailsDynamicaly1 {
             Class.forName("com.mysql.cj.jdbc.Driver"); // Load the driver
             String url = "jdbc:mysql://localhost:3306/aazaddb";
             String username = "root";
-            String password = "AAzad@12345";
+            String password = "root";
             Connection con = DriverManager.getConnection(url, username, password); // connection stablise
             String q = "insert into bable(tName, tCity) values(?, ?)"; // create a dynamic query
             PreparedStatement pstmt = con.prepareStatement(q); // get the PreparedStatement object
