@@ -12,7 +12,7 @@ public class InsertTableInDB {
             Class.forName("com.mysql.cj.jdbc.Driver"); // Load to driver
             String url = "jdbc:mysql://localhost:3306/aazaddb";
             String username = "root";
-            String password = "AAzad@12345";
+            String password = "root";
             Connection con = DriverManager.getConnection(url, username, password); // create connction
             String q = "create table bable(tId int(20) primary key auto_increment, tName varchar(200) not null, tCity varchar(400))";
             Statement stmt = con.createStatement(); // Create Statement
